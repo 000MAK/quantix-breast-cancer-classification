@@ -37,3 +37,25 @@ python train.py --output-dir outputs\run-2 --seed 17
 ```
 
 The held-out test set is evaluated once and is not used to fit or select the model.
+
+## Results
+
+Local run with the defaults (seed 42), held-out test set of 114 samples: accuracy **0.982**, malignant precision **0.976**, recall **0.976**, ROC-AUC **0.996**. A small, well-studied benchmark; these numbers say nothing about clinical performance.
+
+## Repository contents
+
+| File | Purpose |
+|---|---|
+| `.gitignore` | Keeps data, weights and outputs out of Git |
+| `LICENSE` | MIT licence for the code |
+| `main.py` | Training and evaluation script |
+| `requirements.txt` | Python dependencies |
+| `train.py` | Training and evaluation script |
+
+## License
+
+Code is released under the MIT License (see `LICENSE`). Datasets keep their own licences and are downloaded at run time, not redistributed here.
+
+## Related
+
+Part of a set of compact, reproducible ML/DL baselines by [000MAK](https://github.com/000MAK). Flagship research project: [QMASE martial-arts analytics engine](https://github.com/000MAK/quantix-martial-arts-engine).
